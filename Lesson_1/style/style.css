@@ -1,0 +1,300 @@
+body {
+    background: #3060e5 ;
+}
+
+*::selection {
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 black
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+body * {
+    font-family: 'Open Sans', sans-serif;
+    cursor: not-allowed;
+}
+
+body>header {
+    font-size: 1em;
+    background-color: #3060e5;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 15vh;
+    box-shadow: 0 2px 30px black;
+}
+
+header>ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    list-style: none;
+    color: wheat;
+    font-size: 1.2em;
+}
+
+body>header a {
+    color: white;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+header>.logotype img {
+    height: 15vh;
+    cursor: pointer;
+}
+
+body>header a:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(29, 205, 170, 1);
+}
+
+body>header li {
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+    text-align-last: center;
+    transition: all .3s;
+    height: 15vh;
+    display: inline-grid;
+    align-items: center
+}
+
+body>header li:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 0 30px black;
+}
+
+/*alls blocks*/
+
+.blocks-standart {
+    margin: 7vh 0;
+    display: grid;
+    font-size: 1em;
+    box-shadow: 0 2px 30px black;
+    background-color: #3060e5;
+    background-image: url("../image/philip-logo-2.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: bottom right;
+}
+
+.blocks-standart article {
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    align-self: center;
+  
+}
+.blocks-standart header {
+    font-size: 2.5em;
+    text-align: center;
+    color: black;
+    align-self: center;
+  
+}
+
+/*block 1*/
+
+section#block1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh 40vh;
+}
+
+#block1 .curse {
+    font-size: 4em;
+    font-weight: bolder;
+    color: #b50808;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    line-height: 5.5;
+}
+
+#block1 .name-lesson {
+    text-align: center;
+    font-size: 3em;
+    color: #363636;
+    text-shadow: 1px 1px 3px black;
+}
+
+/*black 2*/
+#block2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 75vh;
+}
+#block2 li{
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    width: 600px;
+    margin: 10px auto;
+}
+/*block 3-4-5*/
+
+#block3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto
+}
+.presentation-block{
+ background: linear-gradient(180deg ,rgb(252, 255, 254),rgb(237, 237, 237)) !important;
+ background-image: url("../image/philip-logo-2.png");
+ background-repeat: no-repeat;
+ background-repeat: no-repeat;
+ background-size: 150px;
+ background-position: bottom right;
+ width: 80%;
+ display: grid;
+ margin: 10vh auto;
+ box-shadow: 2px 2px 30px black;
+ border-radius: 3px;
+}
+
+.presentation-block header{
+    font-size: 2em;
+    color: black;
+    text-align: center
+}
+
+.presentation-block article{
+ font-size: 1.2em;   
+}
+
+.presentation-block article img, #block4 article img, #block5 article img{
+    width: 50%;
+    box-shadow: 0 2px 30px black;
+    margin: 35px auto;
+}
+.presentation-block article ul, .presentation-block article ol , #block4 article ol, #block5 article ul{
+    margin: 50px auto;
+    width: 80%;
+    text-align: left;
+}
+.presentation-block article li, #block4 article li, #block5 article li{
+    width: 100%;
+    list-style: none;
+}
+.presentation-block article li::before, #block4 article li::before, #block5 article li::before{
+    content: "";
+    background: #3060e5;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 35px;
+    border: 1px solid white;
+}
+.presentation-block article table{
+width: 50%;
+margin: 25px auto;
+box-shadow: 2px 2px 2px black;
+font-size: 1.2em;
+text-shadow: 0 0 0 black;
+ text-align: left;
+}
+.presentation-block article tr:nth-child(odd), #block4 article tr:nth-child(odd), #block5 article tr:nth-child(odd){
+    color: black;
+    background-color: rgba(217, 217, 217, 1);
+    font-size: 1em;
+}
+.presentation-block article tr:nth-child(even), #block4 article tr:nth-child(even), #block5 article tr:nth-child(even){
+    color: black;
+    background-color: rgba(196, 196, 196, 1);
+    font-size: 1em;
+}
+.presentation-block article td:nth-child(1), #block4 article tr:nth-child(1), #block5 article tr:nth-child(1){
+    background-color: rgba(148, 148, 148, 1);
+    width: 15px;
+    border-right: 1px solid black;
+    font-size: 1em;
+}
+
+.red{
+    color: #b50808;
+}
+
+.blue{
+    color: blue;
+}
+
+/*block4*/
+
+div.link{
+    margin: 1em 0;
+}
+
+div.link > a{
+    color: white;
+    cursor: pointer;
+    transition: all .7s;
+
+}
+
+div.link > a:hover{
+    color: silver;
+    text-decoration: none;
+    border-top: 3px solid silver;
+    border-bottom: 3px solid silver;
+    padding-bottom: .2em;
+    box-shadow: 2px 0 30px black
+}
+
+div.video{
+    margin: 1em 0;
+}
+
+footer{
+    padding: 5em;
+    color: white;
+    font-size: 1.5em;
+}
+footer a{
+   cursor: pointer; 
+}
+
+.presentation-block > header:nth-child(1){
+    margin-bottom:30px;
+}
+.presentation-block{
+    padding: 30px 0
+}
+
+.name-rules{
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-transform: uppercase
+}
+.green {
+color:green
+}
+
+#autor {
+display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#autor img{
+border-radius: 3px;
+}
+
+#autor .autor-name{
+font-size: 4em;
+    font-weight: bold;
+}
+#autor .position{
+    font-size: 3em;
+}
+
+#autor .link-autor{
+font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+}

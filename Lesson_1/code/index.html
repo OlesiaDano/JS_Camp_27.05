@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt('What is your name?');
+        var surname = prompt('What is your surname?');
+        var age = prompt('What is your age?');
+
+        var birthDay = parseInt(prompt('What is your birth Day?'));
+        var birthMonth = parseInt(prompt('What is your birth Month?'));
+        var birthYear = parseInt(prompt('What is your birth Year?'));
+
+        var sum = (birthDay + birthMonth + birthYear);
+        var avarage = sum/3;
+
+        document.write("<div style='width:900px; height:900px; margin: 0 auto;'>");
+        document.write("<div style='width:800px; height:200px; border: 2px solid red; float: left; display: flex; justify-content: center; align-items: center;'>header 800x200</div>");
+        // document.write("<div style='width:804px; height:402px; float: left;'>");
+        document.write("<nav style='width:100px; height:400px; border: 2px solid orange; float: left; display: flex; justify-content: center; align-items: center;'>nav 100x400</nav>");
+        document.write("<section style='width:696px; height:400px; border: 2px solid orange; float: left; display: flex; justify-content: center; align-items: center;'>");
+        document.write(name + "</br>");
+        document.write(surname + "</br>");
+        document.write(age + "</br>");
+        document.write("</section>");
+        document.write("<div style='width:800px; height:200px; border: 2px solid grey; float: left; display: flex; justify-content: center; align-items: center;'>");
+        document.write("AVARAGE NUMBER IS: " + avarage);
+        document.write("</div>");
+        document.write("</div>");
+    </script>
+
+    
+</body>
+</html>
