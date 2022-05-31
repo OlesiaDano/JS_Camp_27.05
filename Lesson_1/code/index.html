@@ -7,10 +7,12 @@
 </head>
 <body>
     <script>
+        //Task 2
         var name = prompt('What is your name?');
         var surname = prompt('What is your surname?');
         var age = prompt('What is your age?');
 
+        //Task 3
         var birthDay = parseInt(prompt('What is your birth Day?'));
         var birthMonth = parseInt(prompt('What is your birth Month?'));
         var birthYear = parseInt(prompt('What is your birth Year?'));
@@ -18,11 +20,11 @@
         var sum = (birthDay + birthMonth + birthYear);
         var avarage = sum/3;
 
+        //Task 1
         document.write("<div style='width:900px; height:900px; margin: 0 auto;'>");
         document.write("<div style='width:800px; height:200px; border: 2px solid red; float: left; display: flex; justify-content: center; align-items: center;'>header 800x200</div>");
-        // document.write("<div style='width:804px; height:402px; float: left;'>");
         document.write("<nav style='width:100px; height:400px; border: 2px solid orange; float: left; display: flex; justify-content: center; align-items: center;'>nav 100x400</nav>");
-        document.write("<section style='width:696px; height:400px; border: 2px solid orange; float: left; display: flex; justify-content: center; align-items: center;'>");
+        document.write("<section style='box-sizing:border-box; width:700px; height:400px; border: 2px solid orange; float: left; display: flex; justify-content: center; align-items: center; text-align: center; text-transform: uppercase;'>");
         document.write(name + "</br>");
         document.write(surname + "</br>");
         document.write(age + "</br>");
@@ -31,6 +33,45 @@
         document.write("AVARAGE NUMBER IS: " + avarage);
         document.write("</div>");
         document.write("</div>");
+
+
+        //Homework
+        var x = 6;
+        var y = 14;
+        var z = 4;
+
+        x += y - x++ * z ;//result: x = -4. explanation: x = x + (y - (x++ * z));
+        console.log("x += y - x++ * z; result: " + x);
+
+        var x = 6;
+        var y = 14;
+        var z = 4;
+
+        z = --x - y * 5 ;//result: z = -65. explanation: z = (--x - (y * 5);
+        console.log("z = --x - y * 5 ; result: " + z);
+
+        var x = 6;
+        var y = 14;
+        var z = 4;
+
+        y /= x + 5 % z;//result: y = 2. explanation: y = (y / (x + (5 % z));
+        console.log("y /= x + 5 % z; result: " + y);
+
+
+        var x = 6;
+        var y = 14;
+        var z = 4;
+
+        var result  = z - x++ + y * 5;//result: result = 68; explanation: result = (z - x++) + (y * 5));
+        console.log("z - x++ + y * 5; result: " + result);
+
+        var x = 6;
+        var y = 14;
+        var z = 4;
+
+        x = y - x++ * z;//result: x = -10; explanation: x = y - (x++ * z);
+        console.log("x = y - x++ * z; result: " + x);
+
     </script>
 
     
