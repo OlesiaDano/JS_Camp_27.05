@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2</title>
+</head>
+<body>
+    <script>
+
+        // Task 4
+        // Rectangle
+        for (let i = 0; i < 10; i++) {
+            for (let j = 0; j < 30; j++) {
+                document.write("$ ");
+            }
+            document.write("<br/>");
+        }
+        document.write("<hr>");
+        
+        // Right Triangle
+        let number = 10;
+        for (let i = 0; i < number; i++) {
+            for (let j = i; j < number; j++) {
+                document.write("$ ");
+            }
+            document.write("<br/>");
+        }
+        document.write("<hr>");
+
+        //Equilateral Triangle
+        let num = 11;
+        let str = "";
+        for(let i = 1; i <= num; i++) {
+            for(let j = 1; j <= num-i ; j++) {
+                str += "&nbsp\n";
+            }
+            for(let k = 0; k < 2 * i - 1; k++) {
+                str += "$";
+            }
+            str += "<br>";
+        }
+        document.write(str);
+        document.write("<hr>");
+
+        //Rhombus
+        let numbus = 11;
+        let stringus = "";
+        for(let i = 1; i <= numbus; i++) {
+            for(let j = 1; j <= numbus-i ; j++) {
+                stringus += "&nbsp\n";
+            }
+            for(let k = 0; k < 2 * i - 1; k++) {
+                stringus += "$";
+            }
+            stringus += "<br>";
+        }
+        for(let i = 1; i < numbus; i++) {
+            for(let j = 1; j <= i; j++) {
+                stringus += "&nbsp\n";
+            }
+            for(let k = 0; k < 2 * (numbus-i) - 1; k++) {
+                stringus += "$";
+            }
+            stringus += "<br>";
+        }
+        document.write(stringus);
+        document.write("<hr>");
+
+        //Task 1
+        let a = parseInt(prompt("Enter a"));;
+        let b = parseInt(prompt("Enter b"));;
+        let result = a + b < 4 ? "Little" : "Many";
+        document.write(result);
+        document.write("<hr>");
+
+        //Task 2
+        let message;
+        let login = prompt("What is your login?");
+
+        message= login === 'Vasia' ? 'Hi' : login === 'Director' ? 'Hello' : login === '' ? 'No login': '';
+        document.write(message);
+        document.write("<hr>");
+
+        //Task 3
+        let A = parseInt(prompt("Enter A"));
+        let B = parseInt(prompt("Enter B"));
+
+        let factorial = 0 ;
+        let odd = [];
+
+        for(let i=A; i<=B; i++) {
+            factorial +=i;
+            if (i % 2 !== 0) {
+                odd.push(i);
+            }
+        }
+        document.write(factorial);
+        document.write("<br/>" + odd);
+
+
+     
+    </script>
+
+    
+</body>
+</html>
