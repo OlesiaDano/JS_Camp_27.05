@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 3</title>
+</head>
+<body>
+    <script>
+        //Task 1
+        const styles = ["Jazz", "Blues"];
+        document.write("Array with 2 elements: " + styles);
+        document.write("<hr/>");
+
+        styles.push("Rock and roll");
+        document.write("Array + 1 element: " + styles);
+        document.write("<hr/>");
+
+        let middle = Math.round((styles.length / 2)-1);
+        styles.splice(middle, 1, "Classic");
+        document.write("Array with replaced middle element: " + styles);
+        document.write("<hr/>");
+
+        let firstElement = styles.shift();
+        document.write("Array shifted: " + styles);
+        document.write("<br>" + "Deleted element: " +firstElement);
+        document.write("<hr/>");
+
+
+        styles.unshift("Rap", "Reggae");
+        document.write("Array + 2 elements in front: " + styles);
+        document.write("<hr/>");
+        
+
+    </script>
+</body>
+</html>
