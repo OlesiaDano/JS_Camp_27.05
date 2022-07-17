@@ -30,28 +30,32 @@ window.addEventListener("load", () => {
 
     const count = () => {
         secondsCounter++;
-        secondsCounter = secondsCounter < 10 ? "0" + secondsCounter : secondsCounter;
+        secondsCounter = counterFormatter(secondsCounter);
         seconds.innerText = secondsCounter;
         if (secondsCounter === 60) {
             secondsCounter = 0;
-            secondsCounter = secondsCounter < 10 ? "0" + secondsCounter : secondsCounter;
+            secondsCounter = counterFormatter(secondsCounter);
             seconds.innerText = secondsCounter;
             minutesCounter++;
-            minutesCounter = minutesCounter < 10 ? "0" + minutesCounter : minutesCounter;
+            minutesCounter = counterFormatter(minutesCounter);
             minutes.innerText = minutesCounter;
         }else if (minutesCounter === 60) {
             minutesCounter = 0;
-            minutesCounter = minutesCounter < 10 ? "0" + minutesCounter : minutesCounter;
+            minutesCounter = counterFormatter(minutesCounter);
             minutes.innerText = minutesCounter;
             hoursCounter++;
-            hoursCounter = hoursCounter < 10 ? "0" + hoursCounter : hoursCounter;
+            hoursCounter = counterFormatter(hoursCounter);
             hours.innerText = hoursCounter;
         }else if (hoursCounter === 24) {
             hoursCounter = 0;
-            hoursCounter = hoursCounter < 10 ? "0" + hoursCounter : hoursCounter;
+            hoursCounter = counterFormatter(hoursCounter);
             hours.innerText = hoursCounter;
         };
     };
+
+    function counterFormatter(counter) {
+        return counter < 10 ? "0" + counter : counter;
+    }
 
     start.onclick = () => {
         for(let i=0; i < stopwatch.classList.length; i++) {
