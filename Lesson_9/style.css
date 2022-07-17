@@ -1,0 +1,96 @@
+* {
+    font-size: 1.3rem;
+}
+.container-stopwatch{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px black;
+}
+.stopwatch-display{
+    background: rgba(22, 97, 12, 0.5);
+    padding: 1.5rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.stopwatch-display span{
+    font-size: 2rem;
+}
+.stopwatch-control input{
+    text-transform: uppercase;
+    color: white;
+    background: rgba(0, 0, 0, 0.829);
+    border: none;
+    cursor:	pointer;
+}
+.stopwatch-control button:nth-child(2){
+    margin: 0 .5rem;
+}
+.black{
+    background: black;
+}
+.silver{
+    background: rgba(88, 88, 88, .5);
+}
+.red{
+    background: rgba(231, 40, 40, 0.5);
+}
+.green{
+    background: rgba(39, 211, 76, 0.5);
+    color: rgba(39, 53, 211, 0.5);
+}
+
+.addNumber{
+    margin: 50px 0 20px;
+}
+.button{
+    display: block;
+    width: 420px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background: rgba(39, 53, 211, 0.5);
+    color: white;
+}
+.number{
+    display: block;
+    width: 400px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(185, 188, 222, 0.5);
+    color: rgba(69, 69, 74, 0.5);
+}
+.error-message{
+    display: block;
+    width: 400px;
+    margin: 50px auto 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(206, 1, 1);
+    color: white;
+}
+
+.slider{
+    display: block;
+    width: 500px;
+    height: 250px;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 1px solid rgb(2, 4, 28);
+}
+.slide-img{
+    width: 500px;
+}
