@@ -26,7 +26,7 @@ Human.prototype.addHuman = function (arr) {
 };
 
 //Adding instances ages to an array
-function getAge(arr, ...newArr) {
+Human.prototype.getAge = function (arr, ...newArr) {
     let i = 0;
     if (typeof arr[i] === 'object') {
         for(let i=0; i<arr.length; i++) {
@@ -38,7 +38,7 @@ function getAge(arr, ...newArr) {
 };
 
 //Sorting instances ages in ascending order
-function sortAge(arr) {
+Human.prototype.sortAge = function (arr) {
     arr.sort(function compareNumbers(a, b) {
         return a - b;
     });
@@ -47,7 +47,7 @@ function sortAge(arr) {
 }
 
 //Sorting instances ages in descending order
-function sortAgeReverse(arr) {
+Human.prototype.sortAgeReverse = function (arr) {
     arr.sort(function compareNumbers(a, b) {
         return b - a;
     });
@@ -68,13 +68,13 @@ Pavlo.addHuman(humans);
 Solomia.addHuman(humans);
 
 //Adding instances ages to an array function call
-getAge(humans);
+Ivan.getAge(humans);
 
 //Sorting instances ages in ascending order function call
-sortAge(getAge(humans));
+Oksana.sortAge(Oksana.getAge(humans));
 
 //Sorting instances ages in descending order function call
-sortAgeReverse(getAge(humans));
+Oksana.sortAgeReverse(Oksana.getAge(humans));
 
 //Method not iherited by instances, but still Human method
 Ivan.humanSex(Ivan);
